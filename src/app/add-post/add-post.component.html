@@ -1,0 +1,24 @@
+<div *ngIf="addPostOpen" class="add-post-container">
+  <h2>Creaet Blog Post</h2>
+  <form>
+    <input
+      type="text"
+      name="title"
+      placeholder="Enter title"
+      [value]="blogTitle"
+      [(ngModel)]="blogTitle"
+    />
+    <textarea
+      name="message"
+      placeholder="Enter your story"
+      [value]="blogMessage"
+      [(ngModel)]="blogMessage"
+    ></textarea>
+    <input
+      type="submit"
+      value="Submit"
+      (click)="onCreatePost($event); globalStateService.addPostOpen = false"
+    />
+  </form>
+  <button (click)="globalStateService.addPostOpen = false">Cancel</button>
+</div>

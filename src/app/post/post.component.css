@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  width: 20rem;
+  margin: 1rem;
+  background: #e4f1f7;
+  border: 1px solid #5175ad;
+  border-radius: 0.3rem;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+  background: #ceddf5;
+  border-bottom: 1px solid #5175ad;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content {
+  padding: 1rem;
+}

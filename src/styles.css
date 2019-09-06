@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 45rem) {
+  body {
+    width: 45rem;
+    margin: 0 auto;
+  }
+}

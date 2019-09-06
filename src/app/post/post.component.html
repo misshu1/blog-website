@@ -1,0 +1,11 @@
+<div class="container">
+  <ul *ngFor="let post of posts" class="card">
+    <li>
+      <h2>{{ post.title }}</h2>
+    </li>
+    <ul class="content">
+      <li>Post Id: {{ post.id }}</li>
+      <li>{{ post.message }}</li>
+    </ul>
+  </ul>
+</div>
