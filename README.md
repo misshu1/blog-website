@@ -6,7 +6,7 @@
 
 ### About
 
--   Simble Blogg App that lets you create blog posts;
+-   Simple Blog App that lets you create blog posts
 -   Posts are saved to localStorage
 
 ### How to run
