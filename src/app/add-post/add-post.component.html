@@ -1,24 +1,37 @@
 <div *ngIf="addPostOpen" class="add-post-container">
-  <h2>Creaet Blog Post</h2>
-  <form>
-    <input
-      type="text"
-      name="title"
-      placeholder="Enter title"
-      [value]="blogTitle"
-      [(ngModel)]="blogTitle"
-    />
-    <textarea
-      name="message"
-      placeholder="Enter your story"
-      [value]="blogMessage"
-      [(ngModel)]="blogMessage"
-    ></textarea>
-    <input
-      type="submit"
-      value="Submit"
-      (click)="onCreatePost($event); globalStateService.addPostOpen = false"
-    />
-  </form>
-  <button (click)="globalStateService.addPostOpen = false">Cancel</button>
+    <h2>Creaet Blog Post</h2>
+    <mat-form-field>
+        <input
+            matInput
+            type="text"
+            name="title"
+            placeholder="Enter title"
+            [value]="blogTitle"
+            [(ngModel)]="blogTitle"
+        />
+    </mat-form-field>
+    <mat-form-field>
+        <textarea
+            matInput
+            name="message"
+            placeholder="Enter your story"
+            [value]="blogMessage"
+            [(ngModel)]="blogMessage"
+        ></textarea>
+    </mat-form-field>
+    <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        (click)="onCreatePost($event); globalStateService.addPostOpen = false"
+    >
+        Submit
+    </button>
+    <button
+        mat-raised-button
+        color="warn"
+        (click)="globalStateService.addPostOpen = false"
+    >
+        Cancel
+    </button>
 </div>

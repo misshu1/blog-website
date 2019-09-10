@@ -1,7 +1,13 @@
-<div class="nav">
-  <h2>{{ title }}</h2>
-  <span></span>
-  <button (click)="globalStateService.addPostOpen = true">Add Post</button>
-</div>
-<app-post *ngIf="addPostOpen === false"></app-post>
+<mat-toolbar color="primary">
+    <h2>{{ title }}</h2>
+    <span class="spacer"></span>
+    <button
+        mat-raised-button
+        color="basic"
+        (click)="globalStateService.addPostOpen = true"
+    >
+        Add Post
+    </button>
+</mat-toolbar>
 <app-add-post></app-add-post>
+<app-post *ngIf="addPostOpen === false"></app-post>

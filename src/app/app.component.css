@@ -1,7 +1,3 @@
-.nav {
-  display: flex;
-  align-items: center;
-}
-.nav span {
-  flex: 1;
+.spacer {
+    flex: 1 1 auto;
 }
